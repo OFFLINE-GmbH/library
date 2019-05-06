@@ -485,11 +485,9 @@ class Resizer
                 break;
             case 'image/gif':
                 $img = @imagecreatefromgif($filePath);
-                self::retainImageTransparency($img);
                 break;
             case 'image/png':
                 $img = @imagecreatefrompng($filePath);
-                self::retainImageTransparency($img);
                 break;
             case 'image/webp':
                 $img = @imagecreatefromwebp($filePath); break;
